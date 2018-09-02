@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+#myPieChart{
+	position: absolute;
+	left: 600px;
+	top: 120px;
+}
+
+#myScatterChart {
+	position: absolute;
+	left: 1150px;
+	top: 120px;
+}
+
+#listArtists{
+	position: absolute;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(54, 69, 79);
+	left: 1325px;
+	top: 650px;
+}
+
+#listTracks {
+	position: absolute;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(54, 69, 79);
+	left: 750px;
+	top: 650px;
+}
+
+#Averages {
+	position: absolute;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(54, 69, 79);
+	left: 140px;
+	top: 650px;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(54, 69, 79);
+}
+
+
