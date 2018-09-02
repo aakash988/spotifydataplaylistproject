@@ -9,6 +9,7 @@
 
 var express = require('express'); // Express web server framework
 var app = express();
+var patternomaly = require('patternomaly')
 app.use(express.static(__dirname + '/public'));
 console.log('Listening on 8888');
 app.listen(8888);
