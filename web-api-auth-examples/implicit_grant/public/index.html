@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Spotify Implicit Grant Template</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-  </head>
-  <body class="container">
-    <h1>Spotify Data Dashboard</h1>
-    <p>
-      Here is what your playlist audio features looks like:
-      <canvas id="myChart" width="500" height="500"></canvas>
-    </p>
-  </body>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="spotifystyle.css">
+      <script
+         src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
+      <script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+   </head>
+   <button id = "createDashboard" onclick="dataAnalysis()" style='visibility: visible'>Click here to show data dashboard and curate a new playlist!</button>
+   <body class="container">
+      <div id= "analysisAndCharts" style='visibility: hidden'>
+         <center>
+            <h1>Spotify Data Dashboard <i class="fab fa-spotify" style="font-size:40px;color:royalblue;"></i></h1>
+         </center>
+         <p>
+            <canvas id="myChart" width="550" height="500"></canvas>
+            <canvas id="myPieChart" width="500" height="500"></canvas>
+            <canvas id="myScatterChart" width="500" height="500"></canvas>
+         </p>
+      </div>
+      <div id = "listArtists" style='visibility: hidden'>
+         <h2>Top 5 Artists</h2>
+      </div>
+      <div id = "listTracks" style='visibility: hidden'>
+         <h2>Top 5 Songs</h2>
+      </div>
+      <div id = "Averages" style='visibility: hidden'>
+         <h2>Average Statistics</h2>
+      </div>
+   </body>
+   <script src="script.js" defer></script>
 </html>
